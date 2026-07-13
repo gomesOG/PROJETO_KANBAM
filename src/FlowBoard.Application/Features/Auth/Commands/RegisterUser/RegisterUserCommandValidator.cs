@@ -1,0 +1,24 @@
+using FluentValidation;
+
+namespace FlowBoard.Application.Features.Auth.Commands.RegisterUser;
+
+public class RegisterUserCommandValidator : AbstractValidator<RegisterUserCommand>
+{
+    public RegisterUserCommandValidator()
+    {
+        RuleFor(x => x.Name)
+            .NotEmpty().WithMessage("Nome é obrigatório.")
+            .MaximumLength(100).WithMessage("Nome deve ter no máximo 100 caracteres.");
+
+        RuleFor(x => x.Email)
+            .NotEmpty().WithMessage("E-mail é obrigatório.")
+            .EmailAddress().WithMessage("E-mail inválido.")
+            .MaximumLength(200).WithMessage("E-mail deve ter no máximo 200 caracteres.");
+
+        RuleFor(x => x.Password)
+            .NotEmpty().WithMessage("Senha é obrigatória.")
+            .MinimumLength(8).WithMessage("Senha deve ter no mínimo 8 caracteres.")
+            .Matches("[A-Z]").WithMessage("Senha deve conter ao menos uma letra maiúscula.")
+            .Matches("[0-9]").WithMessage("Senha deve conter ao menos um número.");
+    }
+}
