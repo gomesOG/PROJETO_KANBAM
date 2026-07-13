@@ -26,6 +26,10 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             email.HasIndex(e => e.Value).IsUnique();
         });
 
+        builder.Property(u => u.PasswordHash)
+            .IsRequired()
+            .HasMaxLength(100);
+
         builder.Property(u => u.AvatarUrl)
             .HasMaxLength(500);
 
