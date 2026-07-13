@@ -8,7 +8,7 @@ public class CardTag : Entity
     public string Name { get; private set; }
     public string Color { get; private set; }
 
-    private CardTag() { }
+    private CardTag() { Name = null!; Color = null!; }
 
     internal static CardTag Create(Guid cardId, string name, string color) =>
         new() { CardId = cardId, Name = name.Trim(), Color = color };

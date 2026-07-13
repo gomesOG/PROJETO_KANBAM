@@ -1,4 +1,5 @@
 using FlowBoard.Application.Common.Exceptions;
+using FlowBoard.Domain.Entities;
 using FlowBoard.Application.DTOs;
 using FlowBoard.Application.Interfaces;
 using FlowBoard.Domain.Interfaces;

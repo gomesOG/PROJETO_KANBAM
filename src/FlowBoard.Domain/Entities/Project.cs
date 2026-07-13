@@ -17,7 +17,7 @@ public class Project : AggregateRoot
     public IReadOnlyCollection<ProjectMember> Members => _members.AsReadOnly();
     public IReadOnlyCollection<Board> Boards => _boards.AsReadOnly();
 
-    private Project() { }
+    private Project() { Name = null!; }
 
     public static Project Create(string name, Guid ownerId, string? description = null, string? color = null)
     {

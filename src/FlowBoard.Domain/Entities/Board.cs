@@ -14,7 +14,7 @@ public class Board : AggregateRoot
 
     public IReadOnlyCollection<Column> Columns => _columns.AsReadOnly();
 
-    private Board() { }
+    private Board() { Name = null!; }
 
     public static Board Create(string name, Guid projectId, string? description = null, int position = 0)
     {

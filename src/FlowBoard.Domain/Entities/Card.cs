@@ -24,7 +24,7 @@ public class Card : AggregateRoot
     public IReadOnlyCollection<CardAssignee> Assignees => _assignees.AsReadOnly();
     public IReadOnlyCollection<ChecklistItem> ChecklistItems => _checklistItems.AsReadOnly();
 
-    private Card() { }
+    private Card() { Title = null!; }
 
     internal static Card Create(
         string title,
@@ -132,7 +132,7 @@ public class Card : AggregateRoot
         UpdatedAt = DateTime.UtcNow;
     }
 
-    internal void SetPosition(int position)
+    public void SetPosition(int position)
     {
         Position = position;
         UpdatedAt = DateTime.UtcNow;

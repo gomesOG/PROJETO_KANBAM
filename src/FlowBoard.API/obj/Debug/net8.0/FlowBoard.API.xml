@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlowBoard.API</name>
+    </assembly>
+    <members>
+        <member name="M:FlowBoard.API.Controllers.AuthController.Register(FlowBoard.Application.Features.Auth.Commands.RegisterUser.RegisterUserCommand,System.Threading.CancellationToken)">
+            <summary>Registra um novo usuário.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.AuthController.Login(FlowBoard.Application.Features.Auth.Queries.LoginUser.LoginUserQuery,System.Threading.CancellationToken)">
+            <summary>Autentica um usuário e retorna tokens JWT.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.BoardsController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>Retorna o board completo com colunas e cards.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.BoardsController.Create(FlowBoard.Application.Features.Boards.Commands.CreateBoard.CreateBoardCommand,System.Threading.CancellationToken)">
+            <summary>Cria um novo board em um projeto.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.BoardsController.AddColumn(System.Guid,FlowBoard.API.Controllers.AddColumnRequest,System.Threading.CancellationToken)">
+            <summary>Adiciona uma coluna ao board.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.BoardsController.ReorderColumns(System.Guid,FlowBoard.API.Controllers.ReorderColumnsRequest,System.Threading.CancellationToken)">
+            <summary>Reordena as colunas do board (drag-and-drop).</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.CardsController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>Retorna os detalhes completos de um card.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.CardsController.Create(FlowBoard.Application.Features.Cards.Commands.CreateCard.CreateCardCommand,System.Threading.CancellationToken)">
+            <summary>Cria um card em uma coluna.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.CardsController.Update(System.Guid,FlowBoard.API.Controllers.UpdateCardRequest,System.Threading.CancellationToken)">
+            <summary>Atualiza título, descrição, prioridade e data de vencimento.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.CardsController.Move(System.Guid,FlowBoard.API.Controllers.MoveCardRequest,System.Threading.CancellationToken)">
+            <summary>Move um card para outra coluna e/ou posição (drag-and-drop).</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.CardsController.Assign(System.Guid,FlowBoard.API.Controllers.AssignUserRequest,System.Threading.CancellationToken)">
+            <summary>Atribui ou remove um responsável do card.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.CardsController.ToggleChecklist(System.Guid,System.Guid,System.Threading.CancellationToken)">
+            <summary>Marca ou desmarca um item de checklist.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.ProjectsController.GetAll(System.Threading.CancellationToken)">
+            <summary>Lista todos os projetos do usuário autenticado.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.ProjectsController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>Retorna um projeto pelo Id.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.ProjectsController.Create(FlowBoard.Application.Features.Projects.Commands.CreateProject.CreateProjectCommand,System.Threading.CancellationToken)">
+            <summary>Cria um novo projeto.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.ProjectsController.Update(System.Guid,FlowBoard.API.Controllers.UpdateProjectRequest,System.Threading.CancellationToken)">
+            <summary>Atualiza nome, descrição e cor de um projeto.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.ProjectsController.Archive(System.Guid,System.Threading.CancellationToken)">
+            <summary>Arquiva um projeto.</summary>
+        </member>
+        <member name="M:FlowBoard.API.Controllers.ProjectsController.AddMember(System.Guid,FlowBoard.API.Controllers.AddMemberRequest,System.Threading.CancellationToken)">
+            <summary>Adiciona um membro ao projeto.</summary>
+        </member>
+    </members>
+</doc>

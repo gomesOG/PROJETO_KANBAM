@@ -1,0 +1,16 @@
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\FlowBoard.Application.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\FlowBoard.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\FlowBoard.Application.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\FlowBoard.Application.AssemblyInfo.cs
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\FlowBoard.Application.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\FlowBoard.Application.sourcelink.json
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\bin\Debug\net8.0\FlowBoard.Application.deps.json
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\bin\Debug\net8.0\FlowBoard.Application.dll
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\bin\Debug\net8.0\FlowBoard.Application.pdb
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\bin\Debug\net8.0\FlowBoard.Domain.dll
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\bin\Debug\net8.0\FlowBoard.Domain.pdb
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\FlowBoar.D312F899.Up2Date
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\FlowBoard.Application.dll
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\refint\FlowBoard.Application.dll
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\FlowBoard.Application.pdb
+C:\Users\User\Desktop\Repositórios\PROJETO_KANBAM\src\FlowBoard.Application\obj\Debug\net8.0\ref\FlowBoard.Application.dll

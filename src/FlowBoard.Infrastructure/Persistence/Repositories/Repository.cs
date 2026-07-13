@@ -5,9 +5,16 @@ using System.Linq.Expressions;
 
 namespace FlowBoard.Infrastructure.Persistence.Repositories;
 
-public class Repository<T>(AppDbContext context) : IRepository<T> where T : Entity
+public class Repository<T> : IRepository<T> where T : Entity
 {
-    protected readonly DbSet<T> DbSet = context.Set<T>();
+    protected readonly AppDbContext Context;
+    protected readonly DbSet<T> DbSet;
+
+    protected Repository(AppDbContext context)
+    {
+        Context = context;
+        DbSet = context.Set<T>();
+    }
 
     public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default) =>
         await DbSet.FindAsync([id], cancellationToken);

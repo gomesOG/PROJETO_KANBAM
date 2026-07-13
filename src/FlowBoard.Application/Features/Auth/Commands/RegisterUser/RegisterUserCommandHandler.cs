@@ -22,7 +22,8 @@ public class RegisterUserCommandHandler(
                 new FluentValidation.Results.ValidationFailure("Email", "Este e-mail já está em uso.")
             });
 
-        var user = User.Create(request.Name, request.Email);
+        var hash = passwordHasher.Hash(request.Password);
+        var user = User.Create(request.Name, request.Email, hash);
 
         await userRepository.AddAsync(user, cancellationToken);
         await unitOfWork.SaveChangesAsync(cancellationToken);

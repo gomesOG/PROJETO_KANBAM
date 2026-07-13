@@ -10,7 +10,7 @@ public class ChecklistItem : Entity
     public int Position { get; private set; }
     public DateTime? CompletedAt { get; private set; }
 
-    private ChecklistItem() { }
+    private ChecklistItem() { Text = null!; }
 
     internal static ChecklistItem Create(Guid cardId, string text, int position)
     {

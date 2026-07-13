@@ -14,7 +14,7 @@ public class Column : Entity
 
     public IReadOnlyCollection<Card> Cards => _cards.AsReadOnly();
 
-    private Column() { }
+    private Column() { Name = null!; }
 
     internal static Column Create(string name, Guid boardId, int position, string? color = null) =>
         new()

@@ -19,6 +19,9 @@ public class LoginUserQueryHandler(
         if (!user.IsActive)
             throw new ForbiddenException("Conta desativada. Entre em contato com o suporte.");
 
+        if (!passwordHasher.Verify(request.Password, user.PasswordHash))
+            throw new NotFoundException("Credenciais inválidas.");
+
         var accessToken = tokenService.GenerateToken(user.Id, user.Email.Value, user.Name);
         var refreshToken = tokenService.GenerateRefreshToken();
 

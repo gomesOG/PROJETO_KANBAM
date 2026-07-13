@@ -13,8 +13,8 @@ public class CurrentUserService(IHttpContextAccessor httpContextAccessor) : ICur
     {
         get
         {
-            var value = User?.FindFirstValue(JwtRegisteredClaimNames.Sub)
-                ?? User?.FindFirstValue(ClaimTypes.NameIdentifier);
+            var value = User?.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
+                ?? User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
             return Guid.TryParse(value, out var id)
                 ? id
@@ -23,8 +23,8 @@ public class CurrentUserService(IHttpContextAccessor httpContextAccessor) : ICur
     }
 
     public string Email =>
-        User?.FindFirstValue(JwtRegisteredClaimNames.Email)
-        ?? User?.FindFirstValue(ClaimTypes.Email)
+        User?.FindFirst(JwtRegisteredClaimNames.Email)?.Value
+        ?? User?.FindFirst(ClaimTypes.Email)?.Value
         ?? throw new UnauthorizedAccessException("Usuário não autenticado.");
 
     public bool IsAuthenticated =>

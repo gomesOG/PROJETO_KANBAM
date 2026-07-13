@@ -21,6 +21,6 @@ public class ProjectRepository(AppDbContext context) : Repository<Project>(conte
             .FirstOrDefaultAsync(p => p.Id == projectId, cancellationToken);
 
     public async Task<bool> IsUserMemberAsync(Guid projectId, Guid userId, CancellationToken cancellationToken = default) =>
-        await context.ProjectMembers
+        await Context.Set<ProjectMember>()
             .AnyAsync(m => m.ProjectId == projectId && m.UserId == userId, cancellationToken);
 }
