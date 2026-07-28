@@ -25,6 +25,6 @@ public class LoginUserQueryHandler(
         var accessToken = tokenService.GenerateToken(user.Id, user.Email.Value, user.Name);
         var refreshToken = tokenService.GenerateRefreshToken();
 
-        return new LoginUserResponse(accessToken, refreshToken, user.Name, user.Email.Value);
+        return new LoginUserResponse(accessToken, refreshToken, user.Name, user.Email.Value, user.Id);
     }
 }
