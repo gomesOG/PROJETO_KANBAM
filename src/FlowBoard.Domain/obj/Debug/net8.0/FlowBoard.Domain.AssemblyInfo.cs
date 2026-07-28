@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlowBoard.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ff2792111c1d34b2dc9f936c8d2c4cbdefb6bad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edb547b1309f99cbe73540cbfd73779a15bef4d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlowBoard.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlowBoard.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
